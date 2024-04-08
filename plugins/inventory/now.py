@@ -509,6 +509,7 @@ class InventoryModule(BaseInventoryPlugin, ConstructableWithLookup, Cacheable):
             host=os.getenv("SN_HOST"),
             username=os.getenv("SN_USERNAME"),
             password=os.getenv("SN_PASSWORD"),
+            proxy=os.getenv("SN_PROXY"),
             client_id=os.getenv("SN_CLIENT_ID"),
             client_secret=get_secret_from_env(),
             refresh_token=os.getenv("SN_REFRESH_TOKEN"),
