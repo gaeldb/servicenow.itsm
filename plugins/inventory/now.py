@@ -64,6 +64,13 @@ options:
           - name: SN_PASSWORD
         required: true
         type: str
+      proxy:
+        description:
+          - Proxy used to reach ServiceNow.
+        env:
+          - name: SN_PROXY
+        required: false
+        type: str        
       client_id:
         description:
           - ID of the client application used for OAuth authentication.
